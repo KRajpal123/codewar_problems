@@ -47,6 +47,10 @@ function better_than_average(class_points, your_points) {
 console.log(better_than_average([2, 3, 4, 5], 3));
 console.log(better_than_average([29, 55, 74, 60, 11, 90, 67, 28], 21)); // should return False
 
+// better_than_average([41, 75, 72, 56, 80, 82, 81, 33], 50);
+// explaination 
+
+
 // Explanation
 // The function takes two parameters: an array of class points and your points.
 // It loops through the class points array and checks if your points are greater than the current point.
