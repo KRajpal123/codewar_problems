@@ -27,7 +27,7 @@ console.log(sheepCount(3)); // "1 sheep...2 sheep...3 sheep
 // an empty array is returned. If start is negative lookback from the end of the array.
 // If end is negative lookback from the end of the array. If both start and end are
 // negative lookback from the end of the array. If start is greater than end, an empty
-// array is returned. If start equals end, an empty array is returned. If start is
+// array is returned.
 
 // Examples of slice() method usage.
 // const students = ["John", "Mary", "David", "Emma"];
@@ -36,3 +36,6 @@ console.log(sheepCount(3)); // "1 sheep...2 sheep...3 sheep
 // console.log(students.slice(-2)); // ["David", "Emma"]
 // console.log(students.slice(1, -1)); // ["Mary", "David"]
 // console.log(students.slice(-1)); // ["Emma"]
+// console.log(students.slice(1,1)); // []
+// console.log(students.slice(-2,-2)) // []
+// console.log(students.slice(10, 1)); // []
