@@ -83,3 +83,18 @@ String.prototype.toJadenCase = function () {
 // 3. Memory Efficiency
 // 4. Code Reusability
 // 5. Dynamic Object Creation
+
+
+
+String.prototype.toJadenCase = function () {
+    return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
+  };
+
+  // Explanation : how regular expressions are working above code
+  // ^ matches the start of a string
+  // \s matches any whitespace character
+  // [a-z] matches any lowercase letter
+  // g flag is used to find all matches in the string, not just the first one
+  // function(x){ return x.toUpperCase(); } is a callback function that is called for each match
+  // it converts the matched character to uppercase and returns it
+  // The replace() method replaces some or all matches of a pattern in a string with a replacement
